@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Circulo.cpp" />
     <ClCompile Include="Cuadrado.cpp" />
+    <ClCompile Include="Formas.cpp" />
     <ClCompile Include="Programa.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Triangulo.cpp" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="Circulo.h" />
     <ClInclude Include="Cuadrado.h" />
+    <ClInclude Include="Formas.h" />
     <ClInclude Include="Programa.h" />
     <ClInclude Include="Triangulo.h" />
   </ItemGroup>

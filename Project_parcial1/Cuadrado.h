@@ -3,13 +3,12 @@
 #include<Windows.h>
 #include<iostream>
 #include<set>
-#include<string.h>
-#include<math.h>
 #include<conio.h>
+#include"Formas.h"
 
 using namespace std;
 
-class Cuadrado
+class Cuadrado : public Formas
 {
 	//atributos
 

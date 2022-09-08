@@ -5,11 +5,11 @@
 #include<iostream>
 #include<conio.h>
 #include<set>
-#include<string.h>
 #include<math.h>
 #include"Circulo.h"
 #include"Cuadrado.h"
 #include"Triangulo.h"
+#include"Formas.h"
 
 class Programa
 {
@@ -37,9 +37,8 @@ public:
 			cout << "\n\tCuadrado(1)\n\n* * * * * * * *\n* * * * * * * *\n* * * * * * * *\n* * * * * * * *\n* * * * * * * *\n* * * * * * * *\n* * * * * * * *\n* * * * * * * *" << endl;
 			cout << "\n\tTriangulo(2)\n\n*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *\n* * * * * * *\n* * * * * * * *" << endl;
 			cout << "\n\tCirculo(3)\n\n       *****\n    ***********\n   *************\n  ***************\n  ***************\n  ***************\n   *************\n    ***********\n       *****\n" << endl;
+			cout << "\nSalir del programa(4)\n" << endl;
 			cin >> figura;
-
-
 
 			switch (figura) {
 			case 1:
@@ -72,7 +71,7 @@ public:
 					cuadro.mover_lleno();
 					cout << "\n\nQuieres regresar al menu(1) o salir del programa?(0)";
 					cin >> repetir;
-					if (repetir = 1) { system("cls"); }
+					if (repetir == 1) { system("cls"); }
 				}
 				else {
 					if (tipo == 2) {
@@ -80,7 +79,7 @@ public:
 						cuadro.mover_vacio();
 						cout << "\n\nQuieres regresar al menu(1) o salir del programa?(0)";
 						cin >> repetir;
-						if (repetir = 1) { system("cls"); }
+						if (repetir == 1) { system("cls"); }
 					}
 					else {
 						cout << "El tipo ingresado no esta dentor de las opciones" << endl;
@@ -109,7 +108,7 @@ public:
 				triangulo.mover_triangulo();
 				cout << "\n\nQuieres regresar al menu(1) o salir del programa?(0)";
 				cin >> repetir;
-				if (repetir = 1) { system("cls"); }
+				if (repetir == 1) { system("cls"); }
 
 				break;
 
@@ -135,9 +134,13 @@ public:
 
 				cout << "\n\nQuieres regresar al menu(1) o salir del programa?(0)";
 				cin >> repetir;
-				if (repetir = 1) { system("cls"); }
+				if (repetir == 1) { system("cls"); }
 
 				break;
+
+			case 4:
+				repetir = 0;
+			break;
 
 			default:
 				cout << "\n\nOpcion no valida\n" << endl;
